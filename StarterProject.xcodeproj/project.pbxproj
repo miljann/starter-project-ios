@@ -17,6 +17,7 @@
 		BF948335287DEB9A00EF5AD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF948334287DEB9A00EF5AD9 /* LaunchScreen.storyboard */; };
 		BF948338287DEBE300EF5AD9 /* CommonViewControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF948337287DEBE300EF5AD9 /* CommonViewControllerSetup.swift */; };
 		BF94833A287DEC0300EF5AD9 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF948339287DEC0300EF5AD9 /* CommonViewController.swift */; };
+		BF94833C287DEE9100EF5AD9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF94833B287DEE9100EF5AD9 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		BF948334287DEB9A00EF5AD9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF948337287DEBE300EF5AD9 /* CommonViewControllerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewControllerSetup.swift; sourceTree = "<group>"; };
 		BF948339287DEC0300EF5AD9 /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
+		BF94833B287DEE9100EF5AD9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				BF94832B287DE6DC00EF5AD9 /* MainCoordinator.swift */,
+				BF94833B287DEE9100EF5AD9 /* Coordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				BF94833A287DEC0300EF5AD9 /* CommonViewController.swift in Sources */,
 				BF94832C287DE6DC00EF5AD9 /* MainCoordinator.swift in Sources */,
 				BF709AA4287DD8980075D12B /* SceneDelegate.swift in Sources */,
+				BF94833C287DEE9100EF5AD9 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
