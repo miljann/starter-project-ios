@@ -18,6 +18,13 @@
 		BF948338287DEBE300EF5AD9 /* CommonViewControllerSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF948337287DEBE300EF5AD9 /* CommonViewControllerSetup.swift */; };
 		BF94833A287DEC0300EF5AD9 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF948339287DEC0300EF5AD9 /* CommonViewController.swift */; };
 		BF94833C287DEE9100EF5AD9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF94833B287DEE9100EF5AD9 /* Coordinator.swift */; };
+		BFCD279228808E8C0057735A /* AppConfigReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD279128808E8C0057735A /* AppConfigReader.swift */; };
+		BFCD279428808EA50057735A /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD279328808EA50057735A /* Environment.swift */; };
+		BFCD2796288091930057735A /* AppConfig-debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFCD2795288091930057735A /* AppConfig-debug.plist */; };
+		BFCD2798288095380057735A /* AppConfig-release.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFCD2797288095380057735A /* AppConfig-release.plist */; };
+		BFCD279B2880965B0057735A /* EnvironmentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD279A2880965B0057735A /* EnvironmentError.swift */; };
+		BFCD279D2880968B0057735A /* AppConfigReaderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD279C2880968B0057735A /* AppConfigReaderError.swift */; };
+		BFCD27A0288097140057735A /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCD279F288097140057735A /* AppConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +41,13 @@
 		BF948337287DEBE300EF5AD9 /* CommonViewControllerSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewControllerSetup.swift; sourceTree = "<group>"; };
 		BF948339287DEC0300EF5AD9 /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
 		BF94833B287DEE9100EF5AD9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BFCD279128808E8C0057735A /* AppConfigReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigReader.swift; sourceTree = "<group>"; };
+		BFCD279328808EA50057735A /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		BFCD2795288091930057735A /* AppConfig-debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppConfig-debug.plist"; sourceTree = "<group>"; };
+		BFCD2797288095380057735A /* AppConfig-release.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppConfig-release.plist"; sourceTree = "<group>"; };
+		BFCD279A2880965B0057735A /* EnvironmentError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentError.swift; sourceTree = "<group>"; };
+		BFCD279C2880968B0057735A /* AppConfigReaderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigReaderError.swift; sourceTree = "<group>"; };
+		BFCD279F288097140057735A /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +64,7 @@
 		BF44204F287DE525004F65C1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				BFCD279028808E810057735A /* AppConfig */,
 				BF94832D287DE9DA00EF5AD9 /* Screens */,
 				BF94832A287DE6CD00EF5AD9 /* Navigation */,
 				BF709AA1287DD8980075D12B /* AppDelegate.swift */,
@@ -122,6 +137,36 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		BFCD279028808E810057735A /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				BFCD279E288097060057735A /* Entities */,
+				BFCD27992880964F0057735A /* Errors */,
+				BFCD279128808E8C0057735A /* AppConfigReader.swift */,
+				BFCD279328808EA50057735A /* Environment.swift */,
+				BFCD2795288091930057735A /* AppConfig-debug.plist */,
+				BFCD2797288095380057735A /* AppConfig-release.plist */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		BFCD27992880964F0057735A /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				BFCD279A2880965B0057735A /* EnvironmentError.swift */,
+				BFCD279C2880968B0057735A /* AppConfigReaderError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		BFCD279E288097060057735A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BFCD279F288097140057735A /* AppConfig.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,6 +228,8 @@
 			files = (
 				BF948335287DEB9A00EF5AD9 /* LaunchScreen.storyboard in Resources */,
 				BF709AAB287DD89C0075D12B /* Assets.xcassets in Resources */,
+				BFCD2798288095380057735A /* AppConfig-release.plist in Resources */,
+				BFCD2796288091930057735A /* AppConfig-debug.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,12 +261,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFCD279B2880965B0057735A /* EnvironmentError.swift in Sources */,
 				BF948338287DEBE300EF5AD9 /* CommonViewControllerSetup.swift in Sources */,
+				BFCD279228808E8C0057735A /* AppConfigReader.swift in Sources */,
+				BFCD27A0288097140057735A /* AppConfig.swift in Sources */,
+				BFCD279D2880968B0057735A /* AppConfigReaderError.swift in Sources */,
 				BF948331287DE9FD00EF5AD9 /* MainScreenViewController.swift in Sources */,
 				BF709AA2287DD8980075D12B /* AppDelegate.swift in Sources */,
 				BF94832F287DE9E500EF5AD9 /* MainScreenViewModel.swift in Sources */,
 				BF948333287DEA4C00EF5AD9 /* MainScreenCoordinator.swift in Sources */,
 				BF94833A287DEC0300EF5AD9 /* CommonViewController.swift in Sources */,
+				BFCD279428808EA50057735A /* Environment.swift in Sources */,
 				BF94832C287DE6DC00EF5AD9 /* MainCoordinator.swift in Sources */,
 				BF709AA4287DD8980075D12B /* SceneDelegate.swift in Sources */,
 				BF94833C287DEE9100EF5AD9 /* Coordinator.swift in Sources */,
@@ -350,6 +402,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENVIRONMENT = debug;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StarterProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -377,6 +430,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENVIRONMENT = release;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StarterProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
